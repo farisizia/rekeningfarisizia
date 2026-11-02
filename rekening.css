@@ -1,145 +1,253 @@
- /* Reset Dasar */
-        * { box-sizing: border-box; margin: 0; padding: 0; }
+/* Reset Dasar */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
-        body {
-            font-family: 'Inter', sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 20px;
-            color: #333;
-        }
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 50%, #9333ea 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px 16px;
+    color: #1f2937;
+}
 
-        .container {
-            width: 100%;
-            max-width: 480px;
-            text-align: center;
-        }
+.container {
+    width: 100%;
+    max-width: 480px;
+    text-align: center;
+    margin: 0 auto;
+}
 
-        /* Header Profil */
-        .profile-section {
-            margin-bottom: 35px;
-            color: white;
-        }
+/* Header Profil */
+.profile-section {
+    margin-bottom: 28px;
+    color: white;
+}
 
-        .avatar {
-            width: 90px;
-            height: 90px;
-            background-color: #eee;
-            border-radius: 50%;
-            border: 3px solid rgba(255, 255, 255, 0.5);
-            margin-bottom: 15px;
-            object-fit: cover;
-        }
+.avatar {
+    width: 96px;
+    height: 96px;
+    background-color: #eee;
+    border-radius: 50%;
+    border: 3px solid rgba(255, 255, 255, 0.8);
+    margin-bottom: 14px;
+    object-fit: cover;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
 
-        .profile-name { font-size: 20px; font-weight: 700; margin-bottom: 8px; }
-        .profile-bio { font-size: 14px; opacity: 0.9; }
+.profile-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    color: #fff;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    padding: 4px 12px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
 
-        /* Gaya Tombol Linktree */
-        .link-button {
-            display: flex;
-            align-items: center;
-            /* PENTING: Ubah arah flex jadi row agar logo di kiri, teks di kanan */
-            flex-direction: row; 
-            width: 100%;
-            background-color: rgba(255, 255, 255, 0.95);
-            padding: 15px 20px; /* Padding sedikit disesuaikan */
-            margin-bottom: 16px;
-            border-radius: 50px;
-            text-decoration: none;
-            color: #333;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-            transition: transform 0.2s, background-color 0.2s, box-shadow 0.2s;
-            cursor: pointer;
-            border: 2px solid transparent;
-            position: relative;
-            overflow: hidden;
-            text-align: left; /* Teks rata kiri */
-        }
+.profile-name {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 4px;
+    letter-spacing: -0.3px;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
 
-        .link-button:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-            border-color: rgba(255, 255, 255, 0.8);
-        }
+.profile-bio {
+    font-size: 13.5px;
+    opacity: 0.92;
+    margin-top: 6px;
+}
 
-        .link-button:active {
-            transform: scale(0.98);
-            background-color: #f0f0f0;
-        }
+/* Container Tombol Rekening */
+.links-container {
+    margin-bottom: 24px;
+}
 
-        /* --- CSS BARU UNTUK LOGO --- */
-        .bank-logo-img {
-            width: 45px;  /* Lebar area logo */
-            height: 45px; /* Tinggi area logo */
-            object-fit: contain; /* Agar logo tidak gepeng */
-            margin-right: 15px; /* Jarak antara logo dan teks */
-            /* Optional: Tambah background putih lingkaran kecil di belakang logo */
-            /* background: #f9f9f9; border-radius: 50%; padding: 5px; */
-        }
+/* Gaya Kartu Tombol Rekening */
+.link-button {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 14px 18px;
+    margin-bottom: 14px;
+    border-radius: 18px;
+    text-decoration: none;
+    color: #1f2937;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+    cursor: pointer;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    position: relative;
+    overflow: hidden;
+    text-align: left;
+    user-select: none;
+}
 
-        /* Container untuk Detail Teks (Nama Bank & No Rek) */
-        .details-container {
-            flex-grow: 1; /* Mengisi sisa ruang kosong */
-        }
+.link-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
 
-        .bank-label {
-            font-size: 12px;
-            font-weight: 600;
-            color: #666;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            margin-bottom: 2px;
-        }
+.link-button:active {
+    transform: scale(0.98);
+    background-color: #f8fafc;
+}
 
-        .rek-number {
-            font-size: 18px; /* Ukuran font sedikit diperkecil agar muat */
-            font-weight: 700;
-            font-family: monospace;
-            color: #000;
-            letter-spacing: -0.5px;
-        }
+/* Area Logo Bank/E-Wallet */
+.bank-logo-img {
+    width: 44px;
+    height: 44px;
+    object-fit: contain;
+    margin-right: 14px;
+    flex-shrink: 0;
+}
 
-        .rek-name {
-             font-size: 12px;
-             color: #888;
-             margin-top: 2px;
-        }
+/* Container Detail Teks */
+.details-container {
+    flex-grow: 1;
+    min-width: 0;
+}
 
-        .copy-indicator {
-            font-size: 20px;
-            color: #ccc;
-            opacity: 0.5;
-            margin-left: 10px; /* Beri jarak dari teks */
-        }
-        
-        /* Notifikasi Toast */
-        #toast {
-            visibility: hidden;
-            min-width: 250px;
-            margin-left: -125px;
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            border-radius: 30px;
-            padding: 12px;
-            position: fixed;
-            z-index: 1;
-            left: 50%;
-            bottom: 30px;
-            font-size: 14px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-        }
+.bank-label {
+    font-size: 11.5px;
+    font-weight: 600;
+    color: #64748b;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+    margin-bottom: 2px;
+    line-height: 1.3;
+}
 
-        #toast.show {
-            visibility: visible;
-            -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
-            animation: fadein 0.5s, fadeout 0.5s 2.5s;
-        }
+.rek-number {
+    font-size: 17px;
+    font-weight: 700;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    color: #0f172a;
+    letter-spacing: 0.2px;
+    word-break: break-all;
+}
 
-        @-webkit-keyframes fadein { from {bottom: 0; opacity: 0;} to {bottom: 30px; opacity: 1;} }
-        @keyframes fadein { from {bottom: 0; opacity: 0;} to {bottom: 30px; opacity: 1;} }
-        @-webkit-keyframes fadeout { from {bottom: 30px; opacity: 1;} to {bottom: 0; opacity: 0;} }
-        @keyframes fadeout { from {bottom: 30px; opacity: 1;} to {bottom: 0; opacity: 0;} }
+.rek-name {
+    font-size: 11.5px;
+    color: #94a3b8;
+    margin-top: 2px;
+}
+
+.copy-indicator {
+    font-size: 18px;
+    color: #94a3b8;
+    margin-left: 10px;
+    flex-shrink: 0;
+    transition: transform 0.15s ease;
+}
+
+.link-button:hover .copy-indicator {
+    transform: scale(1.15);
+    color: #4f46e5;
+}
+
+/* Kartu Disclaimer & Keamanan */
+.security-disclaimer {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 16px;
+    padding: 16px;
+    color: #ffffff;
+    font-size: 11.5px;
+    line-height: 1.6;
+    text-align: left;
+    margin-top: 20px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.security-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 700;
+    font-size: 12.5px;
+    margin-bottom: 8px;
+    color: #ffffff;
+}
+
+.security-disclaimer p {
+    margin-bottom: 8px;
+    opacity: 0.95;
+}
+
+.security-disclaimer p:last-child {
+    margin-bottom: 0;
+}
+
+.security-disclaimer strong {
+    color: #fff;
+    font-weight: 600;
+}
+
+.footer-copy {
+    margin-top: 20px;
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Notifikasi Toast */
+#toast {
+    visibility: hidden;
+    min-width: 260px;
+    background-color: #0f172a;
+    color: #fff;
+    text-align: center;
+    border-radius: 30px;
+    padding: 12px 20px;
+    position: fixed;
+    z-index: 999;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 30px;
+    font-size: 13.5px;
+    font-weight: 500;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+#toast.show {
+    visibility: visible;
+    animation: toastFade 2.8s ease forwards;
+}
+
+@keyframes toastFade {
+    0% {
+        opacity: 0;
+        bottom: 15px;
+    }
+    15% {
+        opacity: 1;
+        bottom: 30px;
+    }
+    85% {
+        opacity: 1;
+        bottom: 30px;
+    }
+    100% {
+        opacity: 0;
+        bottom: 20px;
+    }
+}
