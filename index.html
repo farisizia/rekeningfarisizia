@@ -4,17 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daftar Rekening Pribadi - Faris Izzi Asrori</title>
+    <title>Faris Izzi Asrori — Daftar Rekening Pribadi</title>
     <meta name="description"
-        content="Halaman direktori nomor rekening dan dompet digital pribadi resmi Faris Izzi Asrori untuk mempermudah transfer dan donasi langsung.">
+        content="Halaman catatan pribadi nomor rekening dan dompet digital milik Faris Izzi Asrori untuk memudahkan penyalinan nomor transfer.">
     <meta name="author" content="Faris Izzi Asrori">
     <meta name="robots" content="index, follow">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <link rel="canonical" href="https://rekeningfarisizia.vercel.app/">
 
     <!-- Open Graph Metadata -->
-    <meta property="og:title" content="Daftar Rekening Pribadi - Faris Izzi Asrori">
-    <meta property="og:description" content="Salin nomor rekening dan e-wallet resmi Faris Izzi Asrori dengan mudah.">
+    <meta property="og:title" content="Faris Izzi Asrori — Daftar Rekening Pribadi">
+    <meta property="og:description"
+        content="Catatan pribadi nomor rekening dan dompet digital milik Faris Izzi Asrori.">
     <meta property="og:type" content="profile">
-    <meta property="og:image" content="assets/foto.jpg">
+    <meta property="og:url" content="https://rekeningfarisizia.vercel.app/">
+    <meta property="og:image" content="https://rekeningfarisizia.vercel.app/assets/foto.jpg">
 
     <link rel="stylesheet" href="rekening.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,9 +33,8 @@
       "mainEntity": {
         "@type": "Person",
         "name": "Faris Izzi Asrori",
-        "jobTitle": "Personal Account Information",
-        "description": "Daftar rekening bank dan dompet digital resmi atas nama Faris Izzi Asrori.",
-        "image": "assets/foto.jpg"
+        "description": "Catatan pribadi informasi transfer atas nama Faris Izzi Asrori.",
+        "image": "https://rekeningfarisizia.vercel.app/assets/foto.jpg"
       }
     }
     </script>
@@ -44,7 +47,7 @@
         <header class="profile-section">
             <img src="assets/foto.jpg" alt="Foto Profil Faris Izzi Asrori" class="avatar">
             <div>
-                <span class="profile-tag">✓ Profil Personal Resmi</span>
+                <span class="profile-tag">Catatan Pribadi</span>
             </div>
             <h1 class="profile-name">Faris Izzi Asrori</h1>
             <p class="profile-bio">Klik kartu rekening di bawah untuk langsung menyalin nomor</p>
@@ -53,278 +56,219 @@
         <!-- Daftar Rekening & E-Wallet -->
         <main class="links-container">
 
-            <div class="link-button" onclick="copyNumber(this)" role="button" tabindex="0"
-                title="Klik untuk menyalin nomor">
+            <button type="button" class="link-button" data-num="081210188754" title="Klik untuk menyalin nomor">
                 <img src="assets/ewallet.png" alt="Logo E-Wallet (Dana, OVO, Gopay, LinkAja, ShopeePay)"
                     class="bank-logo-img">
-                <div class="details-container">
-                    <div class="bank-label">Dana, OVO, GOPAY, LINKAJA, ShopeePay</div>
-                    <div class="rek-number" data-num="081210188754">081210188754</div>
-                    <div class="rek-name">A.N. Faris Izzi Asrori</div>
-                </div>
+                <span class="details-container">
+                    <span class="bank-label">Dana, OVO, GOPAY, LINKAJA, ShopeePay</span>
+                    <span class="rek-number">081210188754</span>
+                    <span class="rek-name">A.N. Faris Izzi Asrori</span>
+                </span>
                 <span class="copy-indicator" aria-hidden="true">📋</span>
-            </div>
+            </button>
 
-            <div class="link-button" onclick="copyNumber(this)" role="button" tabindex="0"
-                title="Klik untuk menyalin nomor">
+            <button type="button" class="link-button" data-num="0590019097" title="Klik untuk menyalin nomor">
                 <img src="assets/bcasyariah.png" alt="Logo Bank BCA Syariah" class="bank-logo-img">
-                <div class="details-container">
-                    <div class="bank-label">Bank BCA Syariah</div>
-                    <div class="rek-number" data-num="0590019097">0590019097</div>
-                    <div class="rek-name">A.N. Faris Izzi Asrori</div>
-                </div>
+                <span class="details-container">
+                    <span class="bank-label">Bank BCA Syariah</span>
+                    <span class="rek-number">0590019097</span>
+                    <span class="rek-name">A.N. Faris Izzi Asrori</span>
+                </span>
                 <span class="copy-indicator" aria-hidden="true">📋</span>
-            </div>
+            </button>
 
-            <div class="link-button" onclick="copyNumber(this)" role="button" tabindex="0"
-                title="Klik untuk menyalin nomor">
+            <button type="button" class="link-button" data-num="1310022897484" title="Klik untuk menyalin nomor">
                 <img src="assets/mandiri.svg" alt="Logo Bank Mandiri" class="bank-logo-img">
-                <div class="details-container">
-                    <div class="bank-label">Bank Mandiri</div>
-                    <div class="rek-number" data-num="1310022897484">1310022897484</div>
-                    <div class="rek-name">A.N. Faris Izzi Asrori</div>
-                </div>
+                <span class="details-container">
+                    <span class="bank-label">Bank Mandiri</span>
+                    <span class="rek-number">1310022897484</span>
+                    <span class="rek-name">A.N. Faris Izzi Asrori</span>
+                </span>
                 <span class="copy-indicator" aria-hidden="true">📋</span>
-            </div>
+            </button>
 
-            <div class="link-button" onclick="copyNumber(this)" role="button" tabindex="0"
-                title="Klik untuk menyalin nomor">
+            <button type="button" class="link-button" data-num="7153852485" title="Klik untuk menyalin nomor">
                 <img src="assets/bsi.jpg" alt="Logo Bank Syariah Indonesia" class="bank-logo-img">
-                <div class="details-container">
-                    <div class="bank-label">Bank Syariah Indonesia (BSI)</div>
-                    <div class="rek-number" data-num="7153852485">7153852485</div>
-                    <div class="rek-name">A.N. Faris Izzi Asrori</div>
-                </div>
+                <span class="details-container">
+                    <span class="bank-label">Bank Syariah Indonesia (BSI)</span>
+                    <span class="rek-number">7153852485</span>
+                    <span class="rek-name">A.N. Faris Izzi Asrori</span>
+                </span>
                 <span class="copy-indicator" aria-hidden="true">📋</span>
-            </div>
+            </button>
 
-            <div class="link-button" onclick="copyNumber(this)" role="button" tabindex="0"
-                title="Klik untuk menyalin nomor">
+            <button type="button" class="link-button" data-num="901247113502" title="Klik untuk menyalin nomor">
                 <img src="assets/seabank.png" alt="Logo SeaBank" class="bank-logo-img">
-                <div class="details-container">
-                    <div class="bank-label">SeaBank</div>
-                    <div class="rek-number" data-num="901247113502">901247113502</div>
-                    <div class="rek-name">A.N. Faris Izzi Asrori</div>
-                </div>
+                <span class="details-container">
+                    <span class="bank-label">SeaBank</span>
+                    <span class="rek-number">901247113502</span>
+                    <span class="rek-name">A.N. Faris Izzi Asrori</span>
+                </span>
                 <span class="copy-indicator" aria-hidden="true">📋</span>
-            </div>
+            </button>
 
-            <div class="link-button" onclick="copyNumber(this)" role="button" tabindex="0"
-                title="Klik untuk menyalin nomor">
+            <button type="button" class="link-button" data-num="503629386826" title="Klik untuk menyalin nomor">
                 <img src="assets/jago.png" alt="Logo Bank Jago" class="bank-logo-img">
-                <div class="details-container">
-                    <div class="bank-label">Bank Jago</div>
-                    <div class="rek-number" data-num="503629386826">503629386826</div>
-                    <div class="rek-name">A.N. Faris Izzi Asrori</div>
-                </div>
+                <span class="details-container">
+                    <span class="bank-label">Bank Jago</span>
+                    <span class="rek-number">503629386826</span>
+                    <span class="rek-name">A.N. Faris Izzi Asrori</span>
+                </span>
                 <span class="copy-indicator" aria-hidden="true">📋</span>
-            </div>
+            </button>
 
-            <div class="link-button" onclick="copyNumber(this)" role="button" tabindex="0"
-                title="Klik untuk menyalin nomor">
+            <button type="button" class="link-button" data-num="14944796280" title="Klik untuk menyalin nomor">
                 <img src="assets/linebank.webp" alt="Logo Line Bank" class="bank-logo-img">
-                <div class="details-container">
-                    <div class="bank-label">Line Bank</div>
-                    <div class="rek-number" data-num="14944796280">14944796280</div>
-                    <div class="rek-name">A.N. Faris Izzi Asrori</div>
-                </div>
+                <span class="details-container">
+                    <span class="bank-label">Line Bank</span>
+                    <span class="rek-number">14944796280</span>
+                    <span class="rek-name">A.N. Faris Izzi Asrori</span>
+                </span>
                 <span class="copy-indicator" aria-hidden="true">📋</span>
-            </div>
+            </button>
 
-            <div class="link-button" onclick="copyNumber(this)" role="button" tabindex="0"
-                title="Klik untuk menyalin nomor">
+            <button type="button" class="link-button" data-num="006356886633" title="Klik untuk menyalin nomor">
                 <img src="assets/blubca.webp" alt="Logo BLU by BCA Digital" class="bank-logo-img">
-                <div class="details-container">
-                    <div class="bank-label">BLU / BCA Digital</div>
-                    <div class="rek-number" data-num="006356886633">006356886633</div>
-                    <div class="rek-name">A.N. Faris Izzi Asrori</div>
-                </div>
+                <span class="details-container">
+                    <span class="bank-label">BLU / BCA Digital</span>
+                    <span class="rek-number">006356886633</span>
+                    <span class="rek-name">A.N. Faris Izzi Asrori</span>
+                </span>
                 <span class="copy-indicator" aria-hidden="true">📋</span>
-            </div>
+            </button>
 
-            <div class="link-button" onclick="copyNumber(this)" role="button" tabindex="0"
-                title="Klik untuk menyalin nomor">
+            <button type="button" class="link-button" data-num="081210188754" title="Klik untuk menyalin nomor">
                 <img src="assets/allobank.png" alt="Logo Allo Bank" class="bank-logo-img">
-                <div class="details-container">
-                    <div class="bank-label">Allo Bank</div>
-                    <div class="rek-number" data-num="081210188754">081210188754</div>
-                    <div class="rek-name">A.N. Faris Izzi Asrori</div>
-                </div>
+                <span class="details-container">
+                    <span class="bank-label">Allo Bank</span>
+                    <span class="rek-number">081210188754</span>
+                    <span class="rek-name">A.N. Faris Izzi Asrori</span>
+                </span>
                 <span class="copy-indicator" aria-hidden="true">📋</span>
-            </div>
+            </button>
 
-            <div class="link-button" onclick="copyNumber(this)" role="button" tabindex="0"
-                title="Klik untuk menyalin nomor">
+            <button type="button" class="link-button" data-num="206010005866919" title="Klik untuk menyalin nomor">
                 <img src="assets/mncbank.png" alt="Logo Motion MNC Bank" class="bank-logo-img">
-                <div class="details-container">
-                    <div class="bank-label">Motion / MNC Bank</div>
-                    <div class="rek-number" data-num="206010005866919">206010005866919</div>
-                    <div class="rek-name">A.N. Faris Izzi Asrori</div>
-                </div>
+                <span class="details-container">
+                    <span class="bank-label">Motion / MNC Bank</span>
+                    <span class="rek-number">206010005866919</span>
+                    <span class="rek-name">A.N. Faris Izzi Asrori</span>
+                </span>
                 <span class="copy-indicator" aria-hidden="true">📋</span>
-            </div>
+            </button>
 
-            <div class="link-button" onclick="copyNumber(this)" role="button" tabindex="0"
-                title="Klik untuk menyalin nomor">
+            <button type="button" class="link-button" data-num="813020664847" title="Klik untuk menyalin nomor">
                 <img src="assets/bankina.png" alt="Logo Bank INA Perdana" class="bank-logo-img">
-                <div class="details-container">
-                    <div class="bank-label">Bank INA Perdana</div>
-                    <div class="rek-number" data-num="813020664847">813020664847</div>
-                    <div class="rek-name">A.N. Faris Izzi Asrori</div>
-                </div>
+                <span class="details-container">
+                    <span class="bank-label">Bank INA Perdana</span>
+                    <span class="rek-number">813020664847</span>
+                    <span class="rek-name">A.N. Faris Izzi Asrori</span>
+                </span>
                 <span class="copy-indicator" aria-hidden="true">📋</span>
-            </div>
+            </button>
 
-            <div class="link-button" onclick="copyNumber(this)" role="button" tabindex="0"
-                title="Klik untuk menyalin nomor">
+            <button type="button" class="link-button" data-num="0059168328" title="Klik untuk menyalin nomor">
                 <img src="assets/sinarmas.png" alt="Logo Bank Sinarmas" class="bank-logo-img">
-                <div class="details-container">
-                    <div class="bank-label">Bank Sinarmas</div>
-                    <div class="rek-number" data-num="0059168328">0059168328</div>
-                    <div class="rek-name">A.N. Faris Izzi Asrori</div>
-                </div>
+                <span class="details-container">
+                    <span class="bank-label">Bank Sinarmas</span>
+                    <span class="rek-number">0059168328</span>
+                    <span class="rek-name">A.N. Faris Izzi Asrori</span>
+                </span>
                 <span class="copy-indicator" aria-hidden="true">📋</span>
-            </div>
+            </button>
 
-            <div class="link-button" onclick="copyNumber(this)" role="button" tabindex="0"
-                title="Klik untuk menyalin nomor">
+            <button type="button" class="link-button" data-num="5859459404309006" title="Klik untuk menyalin nomor">
                 <img src="assets/neo.png" alt="Logo Bank Neo Commerce" class="bank-logo-img">
-                <div class="details-container">
-                    <div class="bank-label">Bank Neo Commerce</div>
-                    <div class="rek-number" data-num="5859459404309006">5859459404309006</div>
-                    <div class="rek-name">A.N. Faris Izzi Asrori</div>
-                </div>
+                <span class="details-container">
+                    <span class="bank-label">Bank Neo Commerce</span>
+                    <span class="rek-number">5859459404309006</span>
+                    <span class="rek-name">A.N. Faris Izzi Asrori</span>
+                </span>
                 <span class="copy-indicator" aria-hidden="true">📋</span>
-            </div>
+            </button>
 
-            <div class="link-button" onclick="copyNumber(this)" role="button" tabindex="0"
-                title="Klik untuk menyalin nomor">
+            <button type="button" class="link-button" data-num="081210188754" title="Klik untuk menyalin nomor">
                 <img src="assets/cimb.svg" alt="Logo Bank CIMB Niaga" class="bank-logo-img">
-                <div class="details-container">
-                    <div class="bank-label">Bank CIMB Niaga</div>
-                    <div class="rek-number" data-num="081210188754">081210188754</div>
-                    <div class="rek-name">A.N. Faris Izzi Asrori</div>
-                </div>
+                <span class="details-container">
+                    <span class="bank-label">Bank CIMB Niaga</span>
+                    <span class="rek-number">081210188754</span>
+                    <span class="rek-name">A.N. Faris Izzi Asrori</span>
+                </span>
                 <span class="copy-indicator" aria-hidden="true">📋</span>
-            </div>
+            </button>
 
-            <div class="link-button" onclick="copyNumber(this)" role="button" tabindex="0"
-                title="Klik untuk menyalin nomor">
+            <button type="button" class="link-button" data-num="10045931868" title="Klik untuk menyalin nomor">
                 <img src="assets/banksaqu.svg" alt="Logo Bank Saqu" class="bank-logo-img">
-                <div class="details-container">
-                    <div class="bank-label">Bank Saqu</div>
-                    <div class="rek-number" data-num="10045931868">10045931868</div>
-                    <div class="rek-name">A.N. Faris Izzi Asrori</div>
-                </div>
+                <span class="details-container">
+                    <span class="bank-label">Bank Saqu</span>
+                    <span class="rek-number">10045931868</span>
+                    <span class="rek-name">A.N. Faris Izzi Asrori</span>
+                </span>
                 <span class="copy-indicator" aria-hidden="true">📋</span>
-            </div>
+            </button>
 
-            <div class="link-button" onclick="copyNumber(this)" role="button" tabindex="0"
-                title="Klik untuk menyalin nomor">
+            <button type="button" class="link-button" data-num="000019708817" title="Klik untuk menyalin nomor">
                 <img src="assets/superbank.png" alt="Logo Superbank" class="bank-logo-img">
-                <div class="details-container">
-                    <div class="bank-label">Superbank</div>
-                    <div class="rek-number" data-num="000019708817">000019708817</div>
-                    <div class="rek-name">A.N. Faris Izzi Asrori</div>
-                </div>
+                <span class="details-container">
+                    <span class="bank-label">Superbank</span>
+                    <span class="rek-number">000019708817</span>
+                    <span class="rek-name">A.N. Faris Izzi Asrori</span>
+                </span>
                 <span class="copy-indicator" aria-hidden="true">📋</span>
-            </div>
+            </button>
 
-            <div class="link-button" onclick="copyNumber(this)" role="button" tabindex="0"
-                title="Klik untuk menyalin nomor">
+            <button type="button" class="link-button" data-num="693818023881" title="Klik untuk menyalin nomor">
                 <img src="assets/ocbc.png" alt="Logo Bank OCBC NISP" class="bank-logo-img">
-                <div class="details-container">
-                    <div class="bank-label">Bank OCBC NISP</div>
-                    <div class="rek-number" data-num="693818023881">693818023881</div>
-                    <div class="rek-name">A.N. Faris Izzi Asrori</div>
-                </div>
+                <span class="details-container">
+                    <span class="bank-label">Bank OCBC NISP</span>
+                    <span class="rek-number">693818023881</span>
+                    <span class="rek-name">A.N. Faris Izzi Asrori</span>
+                </span>
                 <span class="copy-indicator" aria-hidden="true">📋</span>
-            </div>
+            </button>
 
-            <div class="link-button" onclick="copyNumber(this)" role="button" tabindex="0"
-                title="Klik untuk menyalin nomor">
+            <button type="button" class="link-button" data-num="50148878880" title="Klik untuk menyalin nomor">
                 <img src="assets/aladin.png" alt="Logo Bank Aladin Syariah" class="bank-logo-img">
-                <div class="details-container">
-                    <div class="bank-label">Bank Aladin Syariah</div>
-                    <div class="rek-number" data-num="50148878880">50148878880</div>
-                    <div class="rek-name">A.N. Faris Izzi Asrori</div>
-                </div>
+                <span class="details-container">
+                    <span class="bank-label">Bank Aladin Syariah</span>
+                    <span class="rek-number">50148878880</span>
+                    <span class="rek-name">A.N. Faris Izzi Asrori</span>
+                </span>
                 <span class="copy-indicator" aria-hidden="true">📋</span>
-            </div>
+            </button>
 
-            <div class="link-button" onclick="copyNumber(this)" role="button" tabindex="0"
-                title="Klik untuk menyalin nomor">
+            <button type="button" class="link-button" data-num="001001661609311" title="Klik untuk menyalin nomor">
                 <img src="assets/bankraya.webp" alt="Logo Bank Raya" class="bank-logo-img">
-                <div class="details-container">
-                    <div class="bank-label">Bank Raya</div>
-                    <div class="rek-number" data-num="001001661609311">001001661609311</div>
-                    <div class="rek-name">A.N. Faris Izzi Asrori</div>
-                </div>
+                <span class="details-container">
+                    <span class="bank-label">Bank Raya</span>
+                    <span class="rek-number">001001661609311</span>
+                    <span class="rek-name">A.N. Faris Izzi Asrori</span>
+                </span>
                 <span class="copy-indicator" aria-hidden="true">📋</span>
-            </div>
+            </button>
 
-            <div class="link-button" onclick="copyNumber(this)" role="button" tabindex="0"
-                title="Klik untuk menyalin nomor">
+            <button type="button" class="link-button" data-num="770055807544" title="Klik untuk menyalin nomor">
                 <img src="assets/krombank.png" alt="Logo Krom Bank" class="bank-logo-img">
-                <div class="details-container">
-                    <div class="bank-label">Krom Bank</div>
-                    <div class="rek-number" data-num="770055807544">770055807544</div>
-                    <div class="rek-name">A.N. Faris Izzi Asrori</div>
-                </div>
+                <span class="details-container">
+                    <span class="bank-label">Krom Bank</span>
+                    <span class="rek-number">770055807544</span>
+                    <span class="rek-name">A.N. Faris Izzi Asrori</span>
+                </span>
                 <span class="copy-indicator" aria-hidden="true">📋</span>
-            </div>
+            </button>
 
         </main>
 
-        <!-- Informasi Penafian & Keamanan (Security & Disclaimer) -->
+        <footer class="site-footer">
+            <p>Halaman catatan pribadi milik Faris Izzi Asrori. Bukan situs resmi atau terafiliasi dengan bank/layanan mana pun, dan tidak pernah meminta login, PIN, atau OTP.</p>
+            <p class="footer-copy">&copy; 2026 Faris Izzi Asrori</p>
+        </footer>
+    </div>
 
+    <!-- Toast Pemberitahuan -->
+    <div id="toast" role="status" aria-live="polite">Nomor rekening berhasil disalin!</div>
 
-        <!-- Toast Pemberitahuan -->
-        <div id="toast" role="status" aria-live="polite">Nomor rekening berhasil disalin!</div>
-
-        <script>
-            function copyNumber(element) {
-                const numberElement = element.querySelector('.rek-number');
-                const numberToCopy = numberElement.getAttribute('data-num');
-
-                if (navigator.clipboard && window.isSecureContext) {
-                    navigator.clipboard.writeText(numberToCopy).then(() => {
-                        showToast();
-                    }).catch(() => {
-                        fallbackCopy(numberToCopy);
-                    });
-                } else {
-                    fallbackCopy(numberToCopy);
-                }
-            }
-
-            function fallbackCopy(text) {
-                const textArea = document.createElement("textarea");
-                textArea.value = text;
-                textArea.style.position = "fixed";
-                textArea.style.opacity = "0";
-                document.body.appendChild(textArea);
-                textArea.focus();
-                textArea.select();
-                try {
-                    document.execCommand('copy');
-                    showToast();
-                } catch (err) {
-                    prompt("Silakan salin nomor rekening berikut:", text);
-                }
-                document.body.removeChild(textArea);
-            }
-
-            let toastTimeout;
-            function showToast() {
-                const toast = document.getElementById("toast");
-                toast.className = "show";
-                clearTimeout(toastTimeout);
-                toastTimeout = setTimeout(() => {
-                    toast.className = toast.className.replace("show", "");
-                }, 2800);
-            }
-        </script>
+    <script src="app.js" defer></script>
 
 </body>
 
